@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1072938213">
+    <data-source source="LOCAL" name="org.mariadb.jdbc.Driver -" uuid="2a8f3364-3391-4d35-ba81-0f3eb3a22efc">
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://localhost:3306/gentleware</jdbc-url>
+      <default-dialect>SQL92</default-dialect>
+      <libraries>
+        <library>
+          <url>file://F:/Distrib/JAVA/maria db/mariadb-java-client-1.1.7.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>

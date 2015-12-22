@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="org.mariadb.jdbc.Driver -" uuid="2a8f3364-3391-4d35-ba81-0f3eb3a22efc">
+    <database-info product="MySQL" version="10.0.17-MariaDB" jdbc-version="4.0" driver-name="mariadb-jdbc" driver-version="1.1">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="gentleware"/>
+    <table name="account" schema="" catalog="gentleware" type="BASE TABLE">
+      <column name="id" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="balance" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="id_client" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5"/>
+    </table>
+    <table name="client" schema="" catalog="gentleware" type="BASE TABLE">
+      <column name="id" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="f_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="l_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+    </table>
+    <table name="payment" schema="" catalog="gentleware" type="BASE TABLE">
+      <column name="id" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="from_account" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="client_id" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="sum" sqlType="DOUBLE UNSIGNED" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="to_account" sqlType="BIGINT UNSIGNED" precision="20" scale="0" nullable="false" jdbcType="-5"/>
+    </table>
+  </data-source>
+</component>
